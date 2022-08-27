@@ -1,0 +1,313 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+
+  box-sizing: border-box;
+  font: 300 1rem Roboto;
+  scroll-behavior: smooth;
+}
+
+body,html{
+  overflow-x: none;
+}
+
+:root{
+  font-size: 16px;
+  --textFont:Raleway;
+  --colorOrange:rgb(239, 138, 23);
+  --colorLinks:rgb(59, 178, 115);
+  --colorViolet:rgb(143, 57, 133);
+}
+
+
+/*===HEADER============*/
+
+.navbar{
+  padding-inline: 3.5rem;
+  height:5.5rem;
+  width: 100%;
+
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background: rgba(219, 214, 201, 0.8);
+
+  position: fixed;
+  top: 0;
+  z-index: 100;
+
+  border-bottom:2px solid var(--colorOrange) ;
+}
+
+.navbar_item a,
+.navbar_item{
+  text-decoration:none;
+  list-style: none;
+
+  font: 500 1.25rem Roboto;
+  color: rgb(3, 29, 68);
+}
+
+.navbar_item a:hover{
+  color: var(--colorOrange);
+  transition: 1s;
+}
+
+.navbar_items{
+  display: flex;
+  gap: 2rem;
+}
+
+#brand h1,
+.span_brand{
+  font: 300 2rem Raleway;
+}
+
+#brand a{
+  text-decoration: none;
+}
+
+.span_brand{
+  color: rgb(11, 60, 73);
+}
+
+/*====================*/
+
+/*=====WE ARE=========*/
+
+.title{
+  font: 300 2.5rem var(--textFont);
+  padding-bottom: 1.5rem;
+}
+
+section{
+  margin-inline: 3.5rem;
+}
+
+.color_span{
+  font: 300 2.5rem var(--textFont);
+  color: var(--colorOrange);
+}
+
+.text{
+  font: 300 1.25rem Roboto;
+}
+
+.strong{
+  font: 500 1.25rem Roboto;
+}
+
+.text_we_are{
+  margin-top: 10rem;
+  width: 31.25rem;
+}
+
+.image_we_are img{
+  width: 31.25rem;
+  height: 18.75rem;
+  position: relative;
+}
+
+.image_we_are{
+  margin-top: 12rem;
+}
+
+.image_we_are::before{
+  content: '';
+  width: 31.25rem;
+  height: 18.75rem;
+  background: var(--colorOrange);
+  z-index: 0;
+  position: absolute;
+  top: 25%;
+  left: 55%;
+}
+
+.container_we_are{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin-bottom: 4rem;
+}
+
+.line-divider{
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(to right, var(--colorOrange) , rgb(109, 61, 7));
+}
+
+/*=====================*/
+
+
+
+/*====PROJECTS=========*/
+
+#projects{
+  margin-top: 5.5rem;
+  margin-bottom: 5rem;
+}
+
+.project{
+  display: flex;
+  align-items: center;
+
+  margin-block: 3rem;
+  border-bottom: 2px solid var(--colorOrange);
+  border-radius: 5px;
+
+  width: 100%;
+  height: 200px;
+
+  box-shadow: 0px 0px 5px rgb(26, 25, 25);
+}
+
+.image_project,.image_project img{
+  width: 20rem;
+  height: 100%;
+  object-fit: cover;
+  border-right: 2px solid var(--colorOrange);
+}
+
+.text_project{
+  padding-inline: 1rem;
+}
+
+.links_project,.violet_color{
+  text-decoration: none;
+  font: 400 1.25rem Roboto;
+}
+
+.links_project{
+  color:var(--colorLinks);
+}
+
+.violet_color{
+  color: var(--colorViolet);
+}
+
+/*=====================*/
+
+
+
+/*===TALK US===========*/
+
+.forms{
+  width: 500px;
+  height: 200px;
+  box-shadow: 3px -3px 5px rgb(49, 48, 48);
+
+  margin-top: 5rem;
+  padding: 1rem;
+  border-left: 2px solid var(--colorOrange);
+  border-bottom: 2px solid var(--colorOrange);
+}
+
+.article_form input{
+  font: 500 1.5rem Roboto;
+  margin-inline: 2rem;
+}
+
+.article_form{
+  margin-block: 1.5rem;
+}
+
+.article_form label{
+  color: var(--colorOrange);
+  font: 500 1.5rem Roboto;
+}
+
+.button button{
+  float: right;
+  border-radius: .5rem;
+  padding: .5rem;
+  background: var(--colorOrange);
+
+  font: 500 1.25rem var(--textFont);
+  color: white;
+}
+
+.button button:hover{
+  background: white;
+  color: var(--colorOrange);
+  transition: 1s;
+}
+
+.container_talk_us{
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.image_talk_us{
+  margin-top: 3rem;
+}
+
+.image_talk_us img{
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+}
+
+.image_talk_us{
+  position: relative;
+}
+
+.image_talk_us::before{
+  content: '';
+  width: 500px;
+  height: 300px;
+
+  background: var(--colorOrange);
+
+  position: absolute;
+  z-index: 0;
+  top: 10%;
+  right: 10%;
+}
+
+#talk_us{
+  margin-top: 5.5rem;
+  margin-bottom: 8rem;
+}
+
+/*=====================*/
+
+
+/*====FOOTER===========*/
+
+.container_footer{
+  width: 100%;
+  background: var(--colorOrange);
+}
+
+.items_footer{
+  display: flex;
+  padding: 2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item_footer .icons li{
+  list-style: none;
+}
+
+.item_footer .icons li img{
+  width: 3rem;
+  height: 3rem;
+}
+
+.brand_footer{
+  font: 500 2rem Raleway;
+}
+
+.icons{
+  gap: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+/*=====================*/
