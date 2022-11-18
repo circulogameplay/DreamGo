@@ -16,7 +16,7 @@ body,html{
 :root{
   font-size: 16px;
   --textFont:Raleway;
-  --colorOrange:rgb(239, 138, 23);
+  --colorOrange:#068941;
   --colorLinks:rgb(59, 178, 115);
   --colorViolet:rgb(143, 57, 133);
 }
@@ -32,7 +32,7 @@ body,html{
   justify-content: space-between;
   display: flex;
   align-items: center;
-  background: rgba(219, 214, 201, 0.8);
+  background:#ffffff;
 
   position: fixed;
   top: 0;
